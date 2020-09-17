@@ -18,3 +18,20 @@ def power(x,y):
     return(ans)
 
 
+// c++ impelemenation
+
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+ll power(ll x,ll y , ll n){
+    ll ans=1 ;
+    while (y>0){
+        if (y&1==1){
+            ans=ans*x%n ;
+        }
+        x=x*x%n ;
+        y>>=1 ;
+    }
+    return(ans);
+}
