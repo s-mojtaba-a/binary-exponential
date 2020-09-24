@@ -20,12 +20,9 @@ def power(x,y):
 
 // c++ impelemenation
 
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-
-ll power(ll x,ll y , ll n){
-    ll ans=1 ;
+template<typename T>
+T power(T x,T y , T n){
+    T ans=1 ;
     while (y>0){
         if (y&1==1){
             ans=ans*x%n ;
