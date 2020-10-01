@@ -1,4 +1,5 @@
 def power(x,y,n):
+    x%=n
     ans=1
     while y>0 :
         if y&1==1 :
@@ -22,6 +23,7 @@ def power(x,y):
 
 template<typename T>
 T power(T x,T y , T n){
+    x%=n;
     T ans=1 ;
     while (y>0){
         if (y&1==1){
